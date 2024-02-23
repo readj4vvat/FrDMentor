@@ -1,0 +1,14 @@
+@mixin list($type: disc) {
+  list-style-type: $type;
+  li {
+    margin-left: 1.25rem;
+    margin-bottom: 1rem;
+    &::marker {
+      font-size: 1rem;
+    }
+  }
+  span {
+    margin-left: 1rem;
+    display: block;
+  }
+}

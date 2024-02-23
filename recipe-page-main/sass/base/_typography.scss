@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src: url("../../assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+h1 {
+  font-family: "Outfit";
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: "Young Serif";
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: "Young Serif";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+span {
+  font-family: "Outfit";
+  font-weight: 400;
+  line-height: 1.2;
+}
+strong {
+  font-family: "Outfit";
+  font-weight: 700;
+}
+li::marker {
+  font-family: "Outfit";
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+table,
+th,
+td {
+  font-family: "Outfit";
+  font-weight: 400;
+  line-height: 1.2;
+}

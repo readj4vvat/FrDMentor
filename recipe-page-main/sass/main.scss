@@ -1,0 +1,100 @@
+@use "utils/variables" as abs;
+@use "utils/mixins" as mix;
+@use "base/reset";
+@use "base/typography";
+
+body {
+  color: abs.$color-wenge-brown;
+}
+h1 {
+  color: abs.$color-dark-charcoal;
+}
+h2 {
+  color: abs.$color-nutmeg;
+}
+header {
+  img {
+    width: 100%;
+  }
+}
+ul {
+  @include mix.list();
+}
+.container {
+  margin: 2.5rem 1.875rem 0 1.875rem;
+}
+
+.recipe {
+  p {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .preparation {
+    background-color: abs.$color-rose-white;
+    border-radius: 1rem;
+    &__title {
+      margin-top: 1.375rem;
+      margin-left: 1.375rem;
+      color: abs.$color-dark-rasberry;
+    }
+    &__list {
+      padding: 1.25rem;
+      width: 80%;
+      li::marker {
+        color: abs.$color-dark-rasberry;
+      }
+    }
+  }
+}
+
+.ingredient {
+  margin-top: 2.1875rem;
+  &__list {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    li::marker {
+      color: abs.$color-nutmeg;
+    }
+  }
+  border-bottom: 1px solid abs.$color-light-grey;
+}
+.instruction {
+  margin-top: 2.1875rem;
+  &__list {
+    margin-top: 1.5rem;
+    @include mix.list(decimal);
+    li {
+      margin-left: 1.5rem;
+      margin-bottom: 2rem;
+      &::marker {
+        color: abs.$color-nutmeg;
+      }
+    }
+  }
+  border-bottom: 1px solid abs.$color-light-grey;
+}
+
+.nutrion {
+  margin-top: 2.1875rem;
+  p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.875rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    th,
+    td {
+      padding: 0.9375rem;
+      text-align: left;
+    }
+
+    tr {
+      border-bottom: 1px solid abs.$color-light-grey;
+    }
+    td {
+      color: abs.$color-nutmeg;
+      font-weight: 600;
+    }
+  }
+}
