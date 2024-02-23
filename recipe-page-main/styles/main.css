@@ -206,8 +206,8 @@ ul span {
   border-radius: 1rem;
 }
 .recipe .preparation__title {
-  margin-top: 1.375rem;
-  margin-left: 1.375rem;
+  padding-top: 1.375rem;
+  padding-left: 1.375rem;
   color: hsl(332, 51%, 32%);
 }
 .recipe .preparation__list {
@@ -279,4 +279,15 @@ ul span {
 .nutrion table td {
   color: hsl(14, 45%, 36%);
   font-weight: 600;
+}
+.nutrion table th {
+  padding-left: 2rem;
+}
+
+@media only screen and (min-width: 90rem) {
+  header {
+    margin: 2.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
 }/*# sourceMappingURL=main.css.map */
