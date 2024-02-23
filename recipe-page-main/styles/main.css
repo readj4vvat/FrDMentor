@@ -285,6 +285,18 @@ ul span {
 }
 
 @media only screen and (min-width: 90rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+  }
+  .wrapper {
+    max-width: 45.9375rem;
+    background: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    margin: 2rem 0;
+  }
   header {
     margin: 2.5rem;
     border-radius: 1rem;
