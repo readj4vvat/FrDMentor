@@ -198,7 +198,7 @@ body {
 .card .button-group button {
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 20%);
-  padding: 1.5rem;
+  padding: 1rem;
   border: none;
   border-radius: 0.625rem;
   cursor: pointer;
