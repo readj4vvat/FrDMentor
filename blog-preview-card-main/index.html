@@ -12,13 +12,28 @@
       href="./assets/images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="styles/main.min.css" />
+
     <title>Frontend Mentor | Blog preview card</title>
   </head>
   <body>
     <div class="card">
-      Learning Published 21 Dec 2023 HTML & CSS foundations These languages are
-      the backbone of every website, defining structure, content, and
-      presentation. Greg Hooper
+      <div class="card__image"></div>
+      <button class="card__button">Learning</button>
+      <span class="card__date">Published 21 Dec 2023</span>
+      <h1 class="card__title">HTML & CSS foundations</h1>
+      <p class="card__desc">
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+      <div class="card__info">
+        <img
+          src="./assets/images/image-avatar.webp"
+          alt="image-avatar"
+          class="card__info__avatar"
+        />
+        <span class="card__info__name">Greg Hooper</span>
+      </div>
     </div>
   </body>
 </html>

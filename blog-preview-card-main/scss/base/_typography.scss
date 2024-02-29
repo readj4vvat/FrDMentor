@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("../../assets/fonts/Figtree-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+h1 {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+span {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+p {
+  font-family: "Figtree";
+  font-style: normal;
+  line-height: 1.5rem;
+
+  font-size: 0.875rem;
+}
+
+button {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.875rem;
+}
+
+@media only screen and (min-width: 48rem) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  span {
+    font-size: 0.875rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}

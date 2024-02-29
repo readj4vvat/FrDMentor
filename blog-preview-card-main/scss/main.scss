@@ -1,0 +1,83 @@
+@use "utils/variables" as colors;
+@use "base/reset";
+@use "base/typography";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: colors.$yellow;
+}
+
+.card {
+  margin: 9.6875rem 1.5rem;
+  background-color: colors.$white;
+  padding: 1.5rem;
+  border: 0.125rem solid colors.$black;
+  border-radius: 1.25rem;
+  max-width: 20.3125rem;
+  box-shadow: 0.625rem;
+
+  &__image {
+    width: 100%;
+    height: 12.5625rem;
+    border-radius: 0.625rem;
+    background-image: url("../assets/images/illustration-article.svg");
+    background-position: -1.5rem center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1.4063rem;
+  }
+  &__button {
+    color: colors.$black;
+    background-color: colors.$yellow;
+    border: none;
+    padding: 0.4375rem 0.8125rem;
+    border-radius: 0.3125rem;
+    margin-bottom: 0.8438rem;
+  }
+  &__date {
+    display: block;
+    margin-bottom: 1.375rem;
+    color: colors.$black;
+  }
+  &__title {
+    margin-bottom: 1.375rem;
+    cursor: pointer;
+    color: colors.$black;
+    transition: 0.4s all;
+    &:hover {
+      color: colors.$yellow;
+      transition: 0.4s all;
+    }
+  }
+  &__desc {
+    margin-bottom: 1.6563rem;
+    color: colors.$grey;
+  }
+  &__info {
+    padding-bottom: 1.4688rem;
+    display: flex;
+    gap: 0.7188rem;
+    align-items: center;
+    &__avatar {
+      width: 2.0625rem;
+      height: 2.0625rem;
+    }
+    &__name {
+      color: colors.$black;
+      font-weight: 800;
+      font-size: 0.875rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .card {
+    max-width: 23.875rem;
+    &__image {
+      height: 12.625rem;
+      background-position: -0.5rem center;
+    }
+  }
+}
