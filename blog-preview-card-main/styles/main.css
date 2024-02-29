@@ -210,7 +210,6 @@ body {
   color: hsl(0, 0%, 50%);
 }
 .card__info {
-  padding-bottom: 1.4688rem;
   display: flex;
   gap: 0.7188rem;
   align-items: center;
