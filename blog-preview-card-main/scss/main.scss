@@ -16,7 +16,9 @@ body {
   border: 0.125rem solid colors.$black;
   border-radius: 1.25rem;
   max-width: 20.3125rem;
-  box-shadow: 0.625rem;
+  box-shadow: 0.625rem 0.625rem 0rem 0rem colors.$black;
+  -webkit-box-shadow: 0.625rem 0.625rem 0rem 0rem colors.$black;
+  -moz-box-shadow: 0.625rem 0.625rem 0rem 0rem colors.$black;
 
   &__image {
     width: 100%;
@@ -75,6 +77,8 @@ body {
 @media only screen and (min-width: 48rem) {
   .card {
     max-width: 23.875rem;
+    margin-top: 13.625rem;
+    margin-bottom: 13.625rem;
     &__image {
       height: 12.625rem;
       background-position: -0.5rem center;
