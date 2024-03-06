@@ -4,7 +4,7 @@
 @use "utils/variables" as colors;
 
 body {
-  background-color: colors.$grayish-purple;
+  background-color: colors.$light-pink;
   background-image: url("../assets/images/background-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -14,6 +14,7 @@ body {
 }
 
 .card {
+  max-width: 20.4375rem;
   margin: 8.9375rem 1.5rem;
   background-color: colors.$white;
   border-radius: 0.5rem;
@@ -25,21 +26,32 @@ body {
     display: flex;
     align-items: center;
     gap: 1.6875rem;
+    img {
+      width: 1.375rem;
+      height: 1.375rem;
+    }
   }
   &__faq {
     margin-top: 1.625rem;
     padding-bottom: 1.375rem;
     border-bottom: 2px solid colors.$light-pink;
     transition: 1s all;
+    &--last {
+      border-bottom: none;
+    }
+  }
+  &__question {
+    text-wrap: balance;
+    transition: 0.4s all;
+    &:hover {
+      color: colors.$title-hover;
+      cursor: pointer;
+    }
   }
   &__question-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    .card__question {
-      text-wrap: balance;
-    }
     button {
       background: none;
       border: none;
@@ -48,11 +60,12 @@ body {
   &__answer {
     margin-top: 1.625rem;
     transition: 0.4s all;
-    animation: uptodown 0.4s forwards;
+    animation: expand 0.4s forwards;
     p {
       width: 94%;
       color: colors.$grayish-purple;
     }
+
     &--hidden {
       transition: 0.4s all;
       display: none;
@@ -60,11 +73,43 @@ body {
   }
 }
 
-@keyframes uptodown {
+@keyframes expand {
   0% {
     margin-top: -6rem;
   }
   100% {
     margin-top: 1.625rem;
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  body {
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+  }
+  .card {
+    margin-top: 10.375rem;
+    max-width: 37.5rem;
+    border-radius: 1rem;
+    padding: 0 2.5625rem;
+    padding-bottom: 1rem;
+    &__header {
+      margin-bottom: 1rem;
+      img {
+        width: 2.25rem;
+        height: 2.25rem;
+      }
+    }
+
+    &__faq {
+      margin-top: 0;
+      padding: 1.6875rem 0;
+      width: 32.25rem;
+    }
+    &__answer {
+      margin-top: 2rem;
+      p {
+        width: 100%;
+      }
+    }
   }
 }

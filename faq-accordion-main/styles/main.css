@@ -134,17 +134,17 @@ p {
 
 @media only screen and (min-width: 48rem) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.125rem;
   }
   h3 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
   p {
     font-size: 1rem;
   }
 }
 body {
-  background-color: hsl(292, 16%, 49%);
+  background-color: hsl(275, 100%, 97%);
   background-image: url("../assets/images/background-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -154,6 +154,7 @@ body {
 }
 
 .card {
+  max-width: 20.4375rem;
   margin: 8.9375rem 1.5rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 0.5rem;
@@ -166,19 +167,31 @@ body {
   align-items: center;
   gap: 1.6875rem;
 }
+.card__header img {
+  width: 1.375rem;
+  height: 1.375rem;
+}
 .card__faq {
   margin-top: 1.625rem;
   padding-bottom: 1.375rem;
   border-bottom: 2px solid hsl(275, 100%, 97%);
   transition: 1s all;
 }
+.card__faq--last {
+  border-bottom: none;
+}
+.card__question {
+  text-wrap: balance;
+  transition: 0.4s all;
+}
+.card__question:hover {
+  color: hsl(281, 83%, 54%);
+  cursor: pointer;
+}
 .card__question-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.card__question-container .card__question {
-  text-wrap: balance;
 }
 .card__question-container button {
   background: none;
@@ -187,7 +200,7 @@ body {
 .card__answer {
   margin-top: 1.625rem;
   transition: 0.4s all;
-  animation: uptodown 0.4s forwards;
+  animation: expand 0.4s forwards;
 }
 .card__answer p {
   width: 94%;
@@ -198,11 +211,41 @@ body {
   display: none;
 }
 
-@keyframes uptodown {
+@keyframes expand {
   0% {
     margin-top: -6rem;
   }
   100% {
     margin-top: 1.625rem;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  body {
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+  }
+  .card {
+    margin-top: 10.375rem;
+    max-width: 37.5rem;
+    border-radius: 1rem;
+    padding: 0 2.5625rem;
+    padding-bottom: 1rem;
+  }
+  .card__header {
+    margin-bottom: 1rem;
+  }
+  .card__header img {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+  .card__faq {
+    margin-top: 0;
+    padding: 1.6875rem 0;
+    width: 32.25rem;
+  }
+  .card__answer {
+    margin-top: 2rem;
+  }
+  .card__answer p {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
