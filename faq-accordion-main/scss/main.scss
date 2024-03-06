@@ -1,0 +1,58 @@
+@use "base/reset";
+@use "base/typography";
+
+@use "utils/variables" as colors;
+
+body {
+  background-color: colors.$grayish-purple;
+  background-image: url("../assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 8.9375rem 1.5rem;
+  background-color: colors.$white;
+  border-radius: 0.5rem;
+  padding: 0 1.5rem;
+  &__header {
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1.6875rem;
+  }
+  &__faq {
+    margin-top: 1.625rem;
+    padding-bottom: 1.375rem;
+    border-bottom: 2px solid colors.$light-pink;
+  }
+  &__question-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .card__question {
+      text-wrap: balance;
+    }
+    button {
+      background: none;
+      border: none;
+    }
+  }
+  &__answer {
+    margin-top: 1.625rem;
+    p {
+      width: 94%;
+      color: colors.$grayish-purple;
+    }
+    &--hidden {
+      display: none;
+      height: 0;
+      transition: 0.4s ease;
+    }
+  }
+}
