@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("../../assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 500 800;
+}
+
+body {
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: "Hanken Grotesk";
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-family: "Hanken Grotesk";
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+h3 {
+  font-family: "Hanken Grotesk";
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+p {
+  font-family: "Hanken Grotesk";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  text-wrap: balance;
+}
+
+@media only screen and (min-width: 48rem) {
+  body {
+    font-size: 1.125rem;
+  }
+  h1 {
+    font-size: 1.375rem;
+  }
+  h2 {
+    font-size: 1.875rem;
+  }
+  h3 {
+    font-size: 1.375rem;
+  }
+}

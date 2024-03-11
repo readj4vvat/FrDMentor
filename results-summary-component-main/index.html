@@ -1,47 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="styles/main.min.css" />
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__col-1">
+        <h2 class="card__col-1__title">Your Result</h2>
+        <div class="card__col-1__score">
+          <div class="card__col-1__score__highlight">76</div>
+          <p class="card__col-1__score__text">of 100</p>
+        </div>
+        <h1 class="card__col-1__h1">Great</h1>
+        <p class="card__col-1__p">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="card__col-2">
+        <div class="card__col-2__summary">Summary</div>
+        <div class="card__col-2__list">
+          <div class="card__col-2__status">
+            <img
+              src="./assets/images/icon-reaction.svg"
+              alt=""
+              class="card__col-2__status__icon"
+            />
+            <p class="card__col-2__status__name">Reaction</p>
+            <div class="card__col-2__score">
+              <span class="card__col-2__score__highlight">80</span> / 100
+            </div>
+          </div>
+          <div class="card__col-2__status">
+            <img
+              src="./assets/images/icon-memory.svg"
+              alt=""
+              class="card__col-2__status__icon"
+            />
+            <span class="card__col-2__status__name">Memory</span>
+            <div class="card__col-2__score">
+              <span class="card__col-2__score__highlight">92</span> / 100
+            </div>
+          </div>
+          <div class="card__col-2__status">
+            <img
+              src="./assets/images/icon-verbal.svg"
+              alt=""
+              class="card__col-2__status__icon"
+            />
+            <span class="card__col-2__status__name">Verbal</span>
+            <div class="card__col-2__score">
+              <span class="card__col-2__score__highlight">61</span> / 100
+            </div>
+          </div>
+          <div class="card__col-2__status">
+            <img
+              src="./assets/images/icon-visual.svg"
+              alt=""
+              class="card__col-2__status__icon"
+            />
+            <span class="card__col-2__status__name">Visual</span>
+            <div class="card__col-2__score">
+              <span class="card__col-2__score__highlight">72</span> / 100
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
