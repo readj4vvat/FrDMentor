@@ -32,8 +32,12 @@ p {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
-  text-align: center;
-  text-wrap: balance;
+}
+
+button {
+  font-family: "Hanken Grotesk";
+  font-size: 18px;
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 48rem) {

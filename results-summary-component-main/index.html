@@ -12,7 +12,7 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="styles/main.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
 
     <title>Frontend Mentor | Results summary component</title>
   </head>
@@ -30,53 +30,62 @@
         </p>
       </div>
       <div class="card__col-2">
-        <div class="card__col-2__summary">Summary</div>
+        <h2 class="card__col-2__summary">Summary</h2>
         <div class="card__col-2__list">
-          <div class="card__col-2__status">
-            <img
-              src="./assets/images/icon-reaction.svg"
-              alt=""
-              class="card__col-2__status__icon"
-            />
-            <p class="card__col-2__status__name">Reaction</p>
-            <div class="card__col-2__score">
-              <span class="card__col-2__score__highlight">80</span> / 100
+          <div class="card__col-2__status card__col-2__status--reaction">
+            <div class="card__col-2__status__col-1">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt=""
+                class="card__col-2__status__icon"
+              />
+              <p class="card__col-2__status__name">Reaction</p>
             </div>
+            <p class="card__col-2__status__col-2">
+              <span class="card__col-2__status__highlight">80</span> / 100
+            </p>
           </div>
-          <div class="card__col-2__status">
-            <img
-              src="./assets/images/icon-memory.svg"
-              alt=""
-              class="card__col-2__status__icon"
-            />
-            <span class="card__col-2__status__name">Memory</span>
-            <div class="card__col-2__score">
-              <span class="card__col-2__score__highlight">92</span> / 100
+          <div class="card__col-2__status card__col-2__status--memory">
+            <div class="card__col-2__status__col-1">
+              <img
+                src="./assets/images/icon-memory.svg"
+                alt=""
+                class="card__col-2__status__icon"
+              />
+              <p class="card__col-2__status__name">Memory</p>
             </div>
+            <p class="card__col-2__status__col-2">
+              <span class="card__col-2__status__highlight">92</span> / 100
+            </p>
           </div>
-          <div class="card__col-2__status">
-            <img
-              src="./assets/images/icon-verbal.svg"
-              alt=""
-              class="card__col-2__status__icon"
-            />
-            <span class="card__col-2__status__name">Verbal</span>
-            <div class="card__col-2__score">
-              <span class="card__col-2__score__highlight">61</span> / 100
+          <div class="card__col-2__status card__col-2__status--verbal">
+            <div class="card__col-2__status__col-1">
+              <img
+                src="./assets/images/icon-verbal.svg"
+                alt=""
+                class="card__col-2__status__icon"
+              />
+              <p class="card__col-2__status__name">Verbal</p>
             </div>
+            <p class="card__col-2__status__col-2">
+              <span class="card__col-2__status__highlight">61</span> / 100
+            </p>
           </div>
-          <div class="card__col-2__status">
-            <img
-              src="./assets/images/icon-visual.svg"
-              alt=""
-              class="card__col-2__status__icon"
-            />
-            <span class="card__col-2__status__name">Visual</span>
-            <div class="card__col-2__score">
-              <span class="card__col-2__score__highlight">72</span> / 100
+          <div class="card__col-2__status card__col-2__status--visual">
+            <div class="card__col-2__status__col-1">
+              <img
+                src="./assets/images/icon-visual.svg"
+                alt=""
+                class="card__col-2__status__icon"
+              />
+              <p class="card__col-2__status__name">Visual</p>
             </div>
+            <p class="card__col-2__status__col-2">
+              <span class="card__col-2__status__highlight">72</span> / 100
+            </p>
           </div>
         </div>
+        <button class="card__col-2__btn">Continue</button>
       </div>
     </div>
   </body>
