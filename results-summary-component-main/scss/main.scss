@@ -1,6 +1,6 @@
+@use "utils/colors";
 @use "base/reset";
 @use "base/typography";
-@use "utils/colors";
 
 .card {
   display: flex;
@@ -13,11 +13,7 @@
     padding: 0 3.75rem;
     padding-top: 1.625rem;
     padding-bottom: 2.625rem;
-    background: linear-gradient(
-      180deg,
-      colors.$light-slate-blue,
-      colors.$light-royal-blue 100%
-    );
+    background: colors.$gradient-bg;
     border-radius: 0rem 0rem 2rem 2rem;
     &__title {
       color: colors.$light-lavender;
@@ -26,7 +22,7 @@
     &__score {
       width: 138px;
       height: 138px;
-      background: colors.$gradient-bg;
+      background: colors.$gradient-bg-2;
       border-radius: 50%;
       display: flex;
       flex-direction: column;
@@ -46,7 +42,7 @@
     }
     &__h1 {
       color: colors.$white;
-      padding-bottom: 0.9375rem;
+      margin-bottom: 0.9375rem;
     }
     &__p {
       color: colors.$light-lavender;
@@ -58,6 +54,7 @@
     padding: 1.875rem;
     &__summary {
       margin-bottom: 1.625rem;
+      color: colors.$dark-gray-blue;
     }
     &__status {
       display: flex;
@@ -99,6 +96,9 @@
         color: colors.$dark-gray-blue-alpha;
         font-weight: 700;
       }
+      &__name {
+        font-weight: 600;
+      }
       &__highlight {
         color: colors.$dark-gray-blue;
         font-weight: 800;
@@ -108,12 +108,60 @@
       margin-top: 0.625rem;
       width: 100%;
       border: none;
-      padding: 1.1875rem;
+      padding: 1rem;
       border-radius: 2rem;
       background: colors.$button-bg;
       color: colors.$white;
       &:hover {
         background: colors.$gradient-bg;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 2rem;
+  }
+  .card {
+    flex-direction: row;
+    max-width: 46rem;
+    max-height: 32rem;
+    border-radius: 2rem;
+    box-shadow: -8.7px 14px 15px 0px colors.$dark-gray-blue-alpha;
+    &__col-1 {
+      border-radius: 2rem;
+      max-width: 23rem;
+      &__title {
+        margin-bottom: 2.25rem;
+      }
+      &__score {
+        width: 12.375rem;
+        height: 12.375rem;
+        margin-bottom: 2.25rem;
+        &__highlight {
+          font-size: 4rem;
+          line-height: 1.2;
+        }
+      }
+      &__h1 {
+        margin-bottom: 1.4375rem;
+      }
+      &__p {
+        text-wrap: unset;
+      }
+    }
+    &__col-2 {
+      padding: 2.5rem;
+      &__summary {
+        margin-bottom: 2.0625rem;
+      }
+      &__status {
+        width: 18rem;
       }
     }
   }

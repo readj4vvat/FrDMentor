@@ -11,15 +11,16 @@ $persian-blue: hsla(241, 72%, 46%, 0);
 $button-bg: hsl(224, 30%, 27%);
 
 //Background
-$light-red-bg: hsla(0, 100%, 67%, 0.221);
-$orangey-yellow-bg: hsla(39, 100%, 56%, 0.221);
-$green-teal-bg: hsla(166, 100%, 37%, 0.221);
-$cobalt-blue-bg: hsla(234, 85%, 45%, 0.221);
+$light-red-bg: hsla(0, 100%, 67%, 0.05);
+$orangey-yellow-bg: hsla(39, 100%, 56%, 0.05);
+$green-teal-bg: hsla(166, 100%, 37%, 0.05);
+$cobalt-blue-bg: hsla(234, 85%, 45%, 0.05);
 $gradient-bg: linear-gradient(
   180deg,
-  $light-slate-blue,
-  $light-royal-blue 100%
+  $light-slate-blue -20%,
+  $light-royal-blue 90%
 );
+$gradient-bg-2: linear-gradient(180deg, $violet-blue-circle, $persian-blue);
 
 // neutral
 $white: hsl(0, 0%, 100%);
