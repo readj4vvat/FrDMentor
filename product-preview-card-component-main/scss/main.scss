@@ -1,56 +1,112 @@
-// import
+@use "utils/colors";
+@use "base/reset";
 
 body {
-  background-color: #fff;
+  background-color: colors.$cream;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
 }
 
 .card {
   width: min(100% - 2rem, 21.4375rem);
+  height: min(100% - 3.5rem, 38.1875rem);
+  margin: 1.75rem 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: colors.$white;
   &__col-1 {
     width: 100%;
     height: 15rem;
     background-image: url("../images/image-product-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   &__col-2 {
+    font-family: "Montserrat", sans-serif;
     padding: 1.5rem;
     &__product {
-      letter-spacing: 1rem;
+      color: colors.$dark-grayish-blue;
+
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.3125rem;
+
+      margin-bottom: 1rem;
     }
     &__title {
-      letter-spacing: 1rem;
-      line-height: 1.2;
+      color: colors.$very-dark-blue;
+      font-family: "Fraunces", serif;
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      letter-spacing: 1.5px;
     }
     &__desc {
+      color: colors.$dark-grayish-blue;
+      font-size: 0.875rem;
+      font-weight: 500;
       line-height: 1.5;
+      margin-bottom: 1.25rem;
     }
     &__price {
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      margin-bottom: 1rem;
       &__new {
-        font-size: 2.5rem;
-        color: green;
+        color: colors.$dark-cyan;
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        font-size: 2.25rem;
       }
       &__old {
+        color: colors.$dark-grayish-blue;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
         text-decoration: line-through;
       }
     }
     &__button {
+      font-family: "Montserrat", sans-serif;
+
       width: 100%;
-      padding: 1rem;
+      max-height: 3rem;
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 0.5rem;
+
+      padding: 1rem;
+
+      border: none;
+      border-radius: 0.5rem;
+      background-color: colors.$dark-cyan;
+      color: colors.$white;
+      cursor: pointer;
+      transition: 0.4s all;
       &__icon {
         width: 1.125rem;
         height: 1.125rem;
       }
       &__text {
-        font-size: 1.125rem;
+        font-size: 1rem;
+        font-weight: 700;
       }
       &:hover {
         background-color: #1a4031;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .card {
+    &__col-1 {
+      background-image: url("../images/image-product-desktop.jpg");
+      width: 50%;
+      height: 100%;
     }
   }
 }
