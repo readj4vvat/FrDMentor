@@ -62,7 +62,7 @@ body {
         color: colors.$dark-cyan;
         font-family: "Fraunces", serif;
         font-weight: 700;
-        font-size: 2.25rem;
+        font-size: 2rem;
       }
       &__old {
         color: colors.$dark-grayish-blue;
@@ -118,14 +118,14 @@ body {
       width: 50%;
       padding: 2rem;
       &__product {
-        margin-bottom: 1.25rem;
+        margin-bottom: 20px;
       }
       &__title {
         margin-bottom: 1.625rem;
       }
       &__desc {
         margin-bottom: 1.5rem;
-        line-height: 1.72;
+        line-height: 1.75;
       }
       &__price {
         margin-bottom: 1.5rem;

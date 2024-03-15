@@ -168,7 +168,7 @@ body {
   color: hsl(158, 36%, 37%);
   font-family: "Fraunces", serif;
   font-weight: 700;
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 .card__col-2__price__old {
   color: hsl(228, 12%, 48%);
@@ -220,14 +220,14 @@ body {
     padding: 2rem;
   }
   .card__col-2__product {
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
   }
   .card__col-2__title {
     margin-bottom: 1.625rem;
   }
   .card__col-2__desc {
     margin-bottom: 1.5rem;
-    line-height: 1.72;
+    line-height: 1.75;
   }
   .card__col-2__price {
     margin-bottom: 1.5rem;
