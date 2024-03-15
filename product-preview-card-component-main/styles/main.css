@@ -149,7 +149,7 @@ body {
   font-size: 34px;
   font-weight: 700;
   margin-bottom: 1.25rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 .card__col-2__desc {
   color: hsl(228, 12%, 48%);
