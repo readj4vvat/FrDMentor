@@ -6,6 +6,7 @@ body {
   display: flex;
   height: 100vh;
   justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -19,6 +20,8 @@ body {
     width: 100%;
     height: 15rem;
     background-image: url("../images/image-product-mobile.jpg");
+    background-color: colors.$very-dark-blue;
+    background-blend-mode: exclusion;
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -95,7 +98,7 @@ body {
         font-weight: 700;
       }
       &:hover {
-        background-color: #1a4031;
+        background-color: colors.$btn-hover;
       }
     }
   }
@@ -103,10 +106,31 @@ body {
 
 @media only screen and (min-width: 48rem) {
   .card {
+    width: min(100% - 2rem, 37.5rem);
+    height: min(100% - 3.5rem, 28.125rem);
+    display: flex;
     &__col-1 {
       background-image: url("../images/image-product-desktop.jpg");
       width: 50%;
       height: 100%;
+    }
+    &__col-2 {
+      width: 50%;
+      padding: 2rem;
+      &__product {
+        margin-bottom: 1.25rem;
+      }
+      &__title {
+        margin-bottom: 1.5rem;
+        letter-spacing: 1px;
+      }
+      &__desc {
+        margin-bottom: 1.5rem;
+        line-height: 1.72;
+      }
+      &__price {
+        margin-bottom: 1.5rem;
+      }
     }
   }
 }

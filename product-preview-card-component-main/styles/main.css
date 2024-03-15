@@ -111,6 +111,7 @@ body {
   display: flex;
   height: 100vh;
   justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -125,6 +126,8 @@ body {
   width: 100%;
   height: 15rem;
   background-image: url("../images/image-product-mobile.jpg");
+  background-color: hsl(212, 21%, 14%);
+  background-blend-mode: exclusion;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -198,13 +201,36 @@ body {
   font-weight: 700;
 }
 .card__col-2__button:hover {
-  background-color: #1a4031;
+  background-color: hsl(156, 42%, 18%);
 }
 
 @media only screen and (min-width: 48rem) {
+  .card {
+    width: min(100% - 2rem, 37.5rem);
+    height: min(100% - 3.5rem, 28.125rem);
+    display: flex;
+  }
   .card__col-1 {
     background-image: url("../images/image-product-desktop.jpg");
     width: 50%;
     height: 100%;
+  }
+  .card__col-2 {
+    width: 50%;
+    padding: 2rem;
+  }
+  .card__col-2__product {
+    margin-bottom: 1.25rem;
+  }
+  .card__col-2__title {
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+  }
+  .card__col-2__desc {
+    margin-bottom: 1.5rem;
+    line-height: 1.72;
+  }
+  .card__col-2__price {
+    margin-bottom: 1.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
