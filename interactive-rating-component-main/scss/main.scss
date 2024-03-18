@@ -1,0 +1,94 @@
+@use "base/reset";
+@use "utils/colors" as c;
+
+body {
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: c.$body-bg;
+  height: 100vh;
+}
+
+.card {
+  width: min(100% - 3rem, 20.4375rem);
+  height: min(100% - 9.5rem, 22.5rem);
+  background-color: c.$card-bg;
+  border-radius: 2rem;
+  display: none;
+  &--active {
+    display: block;
+  }
+  &__body {
+    padding: 1.5rem;
+    &__star {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: c.$dark-blue;
+    }
+    &__image {
+    }
+    &__result {
+    }
+    &__title {
+      color: c.$white;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.125rem;
+    }
+    &__text {
+      color: c.$light-grey;
+      font-size: 0.875rem;
+      margin-bottom: 1.75rem;
+      line-height: 1.5;
+    }
+
+    &__ratings {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      &__rating {
+        font-family: "Overpass", sans-serif;
+        font-size: 0.875rem;
+        width: 2.625rem;
+        height: 2.625rem;
+        background-color: c.$dark-blue;
+        color: c.$medium-grey;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &--active {
+          background-color: c.$light-grey;
+          color: c.$white;
+        }
+        &:hover {
+          background-color: c.$orange;
+        }
+      }
+    }
+    &__button {
+      font-family: "Overpass", sans-serif;
+      background-color: c.$orange;
+      border: none;
+      border-radius: 2rem;
+      color: c.$white;
+      font-size: 14px;
+      font-weight: 700;
+      width: 100%;
+      padding: 0.8125rem;
+      text-transform: uppercase;
+    }
+    &--rating-state {
+    }
+    &--thankyou-state {
+    }
+  }
+}
