@@ -1,0 +1,82 @@
+@use "base/reset";
+@use "utils/colors" as c;
+
+body {
+  font-family: 'Outfit';
+display: flex;
+justify-content: center;
+align-items: center;
+      font-size: 16px;
+  height: 100vh;
+  overflow: hidden;
+  background: c.$very-dark-blue-bg;
+}
+.card {
+  width: min(100% - 48px, 327px);
+  height: min(100% - 124px, 543px);
+  background: c.$very-dark-blue-cardbg;
+  border-radius: 16px;
+  &__content {
+      padding: 24px;
+  }
+  &__image {
+    margin-bottom: 28px;
+    img {
+      width: 100%;
+    border-radius: 8px;
+    }
+  }
+  &__body {
+    margin-bottom: 18px;
+    border-bottom: 1px solid c.$very-dark-blue-line;
+    &__title {
+      color: c.$white;
+      font-size: 22px;
+      margin-bottom: 19px;
+      font-weight: 600;
+    }
+    &__text {
+      color: c.$soft-blue;
+      font-weight: 400;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    &__details {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+    &__price {
+      color: c.$cyan;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+    }
+    &__duration {
+      color: c.$soft-blue;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 300;
+    }
+  }
+&__footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+ &__avatar {
+   width: 33px;
+   height: 33px;
+   border-radius: 50%;
+   border: 1px solid c.$white;
+ }
+ &__author {
+   color: c.$soft-blue;
+   font-weight: 400;
+   &__highlight {
+     color: c.$white;
+   }
+ }
+}
