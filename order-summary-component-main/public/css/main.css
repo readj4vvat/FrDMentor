@@ -123,6 +123,7 @@ body {
 }
 .card__image {
   width: 100%;
+  display: block;
 }
 .card__body {
   padding: 35px 24px;
@@ -176,6 +177,7 @@ body {
 }
 .card__body__details__col-2 {
   font-size: 14px;
+  font-weight: 700;
   color: hsl(245, 75%, 52%);
   cursor: pointer;
   transition: 0.4s all;
@@ -218,4 +220,41 @@ body {
 .card__body__btn-cancel:hover {
   color: hsl(223, 47%, 23%);
   font-weight: 900;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    width: min(100% - 200px, 450px);
+    height: min(100% - 20px, 697px);
+  }
+  .card__body {
+    padding: 50px;
+  }
+  .card__body__context__title {
+    font-size: 24px;
+    margin-bottom: 26px;
+  }
+  .card__body__context__text {
+    font-size: 16px;
+  }
+  .card__body__details {
+    margin-bottom: 32px;
+    padding: 26px 23px;
+  }
+  .card__body__details__col-1__plan__title {
+    font-size: 16px;
+  }
+  .card__body__details__col-1__plan__price {
+    font-size: 16px;
+  }
+  .card__body__details__col-2 {
+    font-size: 16px;
+  }
+  .card__body__btn-accept {
+    font-size: 16px;
+    margin-bottom: 34px;
+  }
+  .card__body__btn-cancel {
+    font-size: 16px;
+  }
 }
