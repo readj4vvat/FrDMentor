@@ -112,6 +112,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display";
 }
 
 .card {
@@ -125,4 +126,96 @@ body {
 }
 .card__body {
   padding: 35px 24px;
+  background-color: white;
+}
+.card__body__context {
+  margin: 0 16px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+.card__body__context__title {
+  color: hsl(223, 47%, 23%);
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 26px;
+}
+.card__body__context__text {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.5;
+  font-size: 15px;
+  font-weight: 500;
+}
+.card__body__details {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 16px;
+  border-radius: 16px;
+}
+.card__body__details__col-1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.card__body__details__col-1__plan {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card__body__details__col-1__plan__title {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 14px;
+}
+.card__body__details__col-1__plan__price {
+  font-size: 14px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+.card__body__details__col-2 {
+  font-size: 14px;
+  color: hsl(245, 75%, 52%);
+  cursor: pointer;
+  transition: 0.4s all;
+}
+.card__body__details__col-2:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+.card__body__btn-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__body__btn-accept {
+  font-family: "Red Hat Display";
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  color: hsl(225, 100%, 98%);
+  background-color: hsl(245, 75%, 52%);
+  width: 100%;
+  margin-bottom: 26px;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+.card__body__btn-accept:hover {
+  opacity: 0.7;
+}
+.card__body__btn-cancel {
+  font-family: "Red Hat Display";
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+.card__body__btn-cancel:hover {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
 }

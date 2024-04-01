@@ -7,6 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: c.$pale-blue;
+  font-family: 'Red Hat Display';
 }
 
 .card {
@@ -20,25 +21,102 @@ body {
   }
   &__body {
     padding: 35px 24px;
+    background-color: white;
     &__context {
+      margin: 0 16px;
+      margin-bottom: 26px;
+      text-align: center;
+      
       &__title {
+        color: c.$dark-blue;
+        font-size: 22px;
+        font-weight: 900;
+        margin-bottom: 26px;
       }
-      &__text {}
+      &__text {
+        color: c.$desaturated-blue;
+        line-height: 1.5;
+        font-size: 15px;
+        font-weight: 500;
+      }
     }
     &__details {
+      margin-bottom: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: c.$very-pale-blue;
+      padding: 16px;
+      border-radius: 16px;
       &__col-1 {
-        &__icon {}
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        &__icon {
+          
+        }
         &__plan {
-          &__title {}
-          &__price {}
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          &__title {
+            color: c.$dark-blue;
+            font-weight: 900;
+            font-size: 14px;
+          }
+          &__price {
+            font-size: 14px;
+           color: c.$desaturated-blue; 
+           font-weight: 500;
+          }
         }
       }
-      &__col-2 {}
+      &__col-2 {
+        font-size: 14px;
+        color: c.$bright-blue;
+        cursor: pointer;
+        transition: 0.4s all;
+        &:hover {
+          opacity: 0.7;
+          text-decoration: none;
+        }
+      }
     }
     &__btn-group {
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    &__btn-accept {}
-    &__btn-cancel {}
+    &__btn-accept {
+      font-family: 'Red Hat Display';
+      font-size: 14px;
+      font-weight: 700;
+      border: none;
+      padding: 15px;
+      border-radius: 12px;
+      color: c.$very-pale-blue;
+      
+      background-color: c.$bright-blue;
+      width: 100%;
+      margin-bottom: 26px;
+      cursor: pointer;
+      transition: 0.4s all;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    &__btn-cancel {
+      font-family: 'Red Hat Display';
+      text-decoration: none;
+      color: c.$desaturated-blue;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.4s all;
+      &:hover {
+        color: c.$dark-blue;
+        font-weight: 900;
+      }
+    }
   }
 }
