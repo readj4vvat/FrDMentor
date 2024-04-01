@@ -231,7 +231,7 @@ body {
     padding: 50px;
   }
   .card__body__context__title {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 26px;
   }
   .card__body__context__text {
@@ -245,9 +245,6 @@ body {
     font-size: 16px;
   }
   .card__body__details__col-1__plan__price {
-    font-size: 16px;
-  }
-  .card__body__details__col-2 {
     font-size: 16px;
   }
   .card__body__btn-accept {
