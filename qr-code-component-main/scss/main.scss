@@ -1,2 +1,13 @@
 @use "base/reset";
 @use "utils/colors";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: min(100% - 52px, 320px);
+  height: min(100% - 170px, 497px);
+}
