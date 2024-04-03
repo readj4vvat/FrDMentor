@@ -13,21 +13,44 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap"
     rel="stylesheet">
-
+  <link rel="stylesheet" href="./css/main.css">
   <title>Frontend Mentor | Stats preview card component</title>
 
 </head>
 
 <body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
+  <div class="card">
+    <div class="card__image"> <img src="./images/image-header-mobile.jpg" srcset="./images/image-header-desktop.jpg 2x"
+        alt="image-header">
+      <div class="card__image__overlay"></div>
+    </div>
+    <div class="card__body">
+      <h1 class="card__body__title"> Get <span class="card__body__title__accent">insights</span> that help your business
+        grow.</h1>
+      <p class="card__body__text">Discover the benefits of data analytics and make better decisions regarding revenue,
+        customer
+        experience, and overall efficiency.
+      </p>
+      <ul class="card__body__list-group">
+        <li class="card__body__list-item">
+          <span class="card__body__list-item__stat">10k+</span>
+          <h2 class="card__body__list-item__heading">companies</h2>
+        </li>
+      </ul>
+      <ul class="card__body__list-group">
+        <li class="card__body__list-item">
+          <span class="card__body__list-item__stat">314</span>
+          <h2 class="card__body__list-item__heading">templates</h2>
+        </li>
+      </ul>
+      <ul class="card__body__list-group">
+        <li class="card__body__list-item">
+          <span class="card__body__list-item__stat">12M+</span>
+          <h2 class="card__body__list-item__heading">queries</h2>
+        </li>
+      </ul>
+    </div>
+  </div>
 
 
 </body>
