@@ -102,16 +102,27 @@ body {
       padding-right: 120px;
       &__title {
         text-align: left;
+        font-size: 32px;
+        margin-bottom: 28px;
       }
       &__text {
         text-align: left;
+        margin-bottom: 68px;
+        line-height: 1.7;
       }
       &__list {
         &-group {
           display: flex;
+          gap: 40px;
+          text-align: left;
         }
         &-item {
-          flex-direction: row;
+          &__stat {
+            font-size: 24px;
+          }
+          &__heading {
+            font-size: 14px;
+          }
         }
       }
     }
