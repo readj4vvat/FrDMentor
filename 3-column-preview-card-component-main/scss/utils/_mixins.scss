@@ -1,0 +1,13 @@
+@use "colors" as c;
+@mixin card-icon($path) {
+      display: block;  
+      width: 100%;
+      height: 40px;
+      background: url($path);
+      background-repeat: no-repeat;
+}
+@mixin button-hover {
+  background-color: inherit;
+      color: c.$transparent-white;
+      border: 2px solid c.$transparent-white;
+}

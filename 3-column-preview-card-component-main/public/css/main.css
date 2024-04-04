@@ -1,0 +1,207 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.container {
+  margin: 88px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: min(100% - 48px, 327px);
+  height: 442px;
+}
+.card__body {
+  padding: 48px;
+}
+.card__icon {
+  margin-bottom: 40px;
+}
+.card__title {
+  font-family: "Big Shoulders Display";
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 35px;
+}
+.card__text {
+  font-family: "Lexend Deca";
+  line-height: 1.5;
+  font-size: 15px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 30px;
+}
+.card__button {
+  padding: 16px 32px;
+  border: none;
+  background: hsl(0, 0%, 95%);
+  border-radius: 32px;
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-weight: 400;
+}
+.card--sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 8px 8px 0 0;
+}
+.card--sedans .card__icon {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: url("../images/icon-sedans.svg");
+  background-repeat: no-repeat;
+}
+.card--sedans .card__button {
+  color: hsl(31, 77%, 52%);
+}
+.card--sedans .card__button:hover {
+  background-color: inherit;
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+.card--suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.card--suvs .card__icon {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: url("../images/icon-suvs.svg");
+  background-repeat: no-repeat;
+}
+.card--suvs .card__button {
+  color: hsl(184, 100%, 22%);
+}
+.card--suvs .card__button:hover {
+  background-color: inherit;
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+.card--luxury {
+  border-radius: 0 0 8px 8px;
+  background-color: hsl(179, 100%, 13%);
+}
+.card--luxury .card__icon {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: url("../images/icon-luxury.svg");
+  background-repeat: no-repeat;
+}
+.card--luxury .card__button {
+  color: hsl(179, 100%, 13%);
+}
+.card--luxury .card__button:hover {
+  background-color: inherit;
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
