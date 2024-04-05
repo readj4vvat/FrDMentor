@@ -218,11 +218,7 @@ input {
     width: min(100% - 48px, 307px);
     height: 500px;
   }
-  .card__body {
-    padding: 48px 40px;
-  }
   .card__text {
-    font-size: 16px;
     margin-bottom: 88px;
   }
   .card--sedans {
