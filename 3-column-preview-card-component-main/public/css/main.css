@@ -205,3 +205,30 @@ input {
   color: hsla(0, 0%, 100%, 0.75);
   border: 2px solid hsla(0, 0%, 100%, 0.75);
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    height: 100%;
+  }
+  .container {
+    margin-top: 171px;
+    flex-direction: row;
+  }
+  .card {
+    width: min(100% - 48px, 307px);
+    height: 500px;
+  }
+  .card__body {
+    padding: 48px 40px;
+  }
+  .card__text {
+    font-size: 16px;
+    margin-bottom: 88px;
+  }
+  .card--sedans {
+    border-radius: 8px 0 0 8px;
+  }
+  .card--luxury {
+    border-radius: 0 8px 8px 0;
+  }
+}
