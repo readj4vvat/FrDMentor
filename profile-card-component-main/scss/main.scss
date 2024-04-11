@@ -25,10 +25,11 @@ body {
     position: relative;
     &__bg {
       position: relative;
+      height: 140px;
     }
     &__avatar {
       position: absolute;
-      top: 50%;
+      top: 62%;
       left: 35%;
       border-radius: 50%;
       border: 5px solid white;
@@ -56,11 +57,11 @@ body {
       }
     }
     &__stats {
-      margin-top: 1.625rem;
+      margin-top: 1.6875rem;
       border-top: 1px solid c.$light-gray;
       display: flex;
       justify-content: space-evenly;
-      padding: 1.5rem;
+      padding: 1.875rem;
     }
     &__stat {
       text-align: center;
