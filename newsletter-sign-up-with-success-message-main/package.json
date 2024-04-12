@@ -5,11 +5,11 @@
   "main": "public/index.html",
   "scripts": {
     "build:sass": "sass  --no-source-map scss:public/css",
-    "copy:images": "copyfiles -u 1 images/**/* public/images",
+    "copy:images": "copyfiles -u 1 assets/images/**/* public/assets/images",
     "copy:html": "copyfiles *.html public",
     "copy": "npm-run-all --parallel copy:*",
     "watch:html": "onchange \"./*.html\" -- npm run copy:html",
-    "watch:images": "onchange \"./images/**/*\" -- npm run copy:images",
+    "watch:images": "onchange \"./assets/images/**/*\" -- npm run copy:images",
     "watch:sass": "sass  --no-source-map --watch scss:public/css",
     "watch": "npm-run-all --parallel watch:*",
     "serve": "browser-sync start --server public --files public",
