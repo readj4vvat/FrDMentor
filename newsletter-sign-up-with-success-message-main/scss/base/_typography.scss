@@ -1,0 +1,38 @@
+$font-path: "../../assets/fonts";
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("#{$font-path}/Roboto-Regular.ttf") format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("#{$font-path}/Roboto-Bold.ttf") format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+$primary-font: 'Roboto', sans-serif;
+
+// title
+@mixin font-title-bold {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+//text
+@mixin font-text-regular {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+//email-label
+@mixin font-email-label {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
