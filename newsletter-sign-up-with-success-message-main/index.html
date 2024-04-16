@@ -20,29 +20,29 @@
   <!-- Sign-up form start -->
 
   <div class="card">
-    <img class="card__image" src="./assets/images/illustration-sign-up-mobile.svg"
-      srcset="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up">
+    <picture class="card__image">
+      <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 37.5rem)">
+      <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 30rem)">
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up">
+    </picture>
     <div class="card__body">
-      <h1 class="card__body__title"> Stay updated!</h1>
-      <p class="card__body__text"> Join 60,000+ product managers receiving monthly updates on:</p>
+      <h1 class="card__body__title">Stay updated!</h1>
+      <p class="card__body__text">Join 60,000+ product managers receiving monthly updates on:</p>
       <ul class="card__body__list">
-        <li class="card__body__list__item"> Product discovery and building what matters</li>
-        <li class="card__body__list__item"> Measuring to ensure updates are a success</li>
-        <li class="card__body__list__item"> And much more!</li>
+        <li class="card__body__list__item"><img src="./assets/images/icon-list.svg" alt="icon-list"
+            class="card__body__list__item__icon">Product discovery and building what matters</li>
+        <li class="card__body__list__item"><img src="./assets/images/icon-list.svg" alt="icon-list"
+            class="card__body__list__item__icon">Measuring to ensure updates are a success</li>
+        <li class="card__body__list__item"><img src="./assets/images/icon-list.svg" alt="icon-list"
+            class="card__body__list__item__icon">And much more!</li>
       </ul>
       <form class="card__body__email">
-        <label for="email"></label>
-        Email address
-        </label>
-        <input type="email" name="email" placeholder="email@company.com">
+        <label for="email" class="card__body__email__label">Email address</label>
+        <input type="email" name="email" placeholder="email@company.com" class="card__body__email__input">
       </form>
-      <button type="submit"> Subscribe to monthly newsletter</button>
+      <button type="submit" class="card__body__btn">Subscribe to monthly newsletter</button>
     </div>
   </div>
-
-
-
-
 
   <!-- Sign-up form end -->
 
@@ -50,16 +50,14 @@
   <div class="card--success">
     <img src="assets/images/icon-success.svg" alt="icon-success">
     <div class="card__body">
-      <h1 class="card__body__title"> Thanks for subscribing!</h1>
-      <p class="card__body__text"> A confirmation email has been sent to <span
+      <h1 class="card__body__title">Thanks for subscribing!</h1>
+      <p class="card__body__text">A confirmation email has been sent to <span
           class="card__body__text--email">ash@loremcompany.com</span>.
         Please open it and click the button inside to confirm your subscription.
       </p>
-      <button type="button"> Dismiss message</button>
+      <button type="button">Dismiss message</button>
     </div>
   </div>
-
-
 
   <!-- Success message end -->
 </body>
