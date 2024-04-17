@@ -123,6 +123,13 @@ input {
   font-style: normal;
   font-weight: 700;
 }
+.card__image {
+  width: 100%;
+  display: block;
+}
+.card__image img {
+  width: 100%;
+}
 .card__body {
   padding: 2.5rem 1.5rem;
 }
