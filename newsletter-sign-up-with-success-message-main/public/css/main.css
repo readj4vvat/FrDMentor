@@ -127,7 +127,7 @@ p {
   line-height: 1.5;
 }
 
-.container {
+body {
   height: 100svh;
 }
 
@@ -222,4 +222,39 @@ p {
 
 .hide {
   display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(235, 18%, 26%);
+  }
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .card {
+    max-width: 58rem;
+    max-height: 40.063rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+  }
+  .card__image {
+    width: 53.12%;
+  }
+  .card__body {
+    margin: auto;
+    padding-left: 2.5rem;
+    padding-right: 3.75rem;
+  }
+  .card__body__title {
+    font-size: 3.438rem;
+    max-width: 100%;
+  }
+  .card__body__btn {
+    padding: 1.25rem;
+  }
 }

@@ -3,7 +3,7 @@
 @use "utils/colors" as c;
 
 
-.container {
+body {
   height: 100svh;
 }
 
@@ -104,4 +104,47 @@
 
 .hide {
   display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: c.$charcoal-grey;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .card {
+    max-width: 58rem;
+    max-height: 40.063rem;
+    padding: 1.5rem;
+    $border-radius: 1.5rem;
+    border-radius: $border-radius;
+    background-color: c.$white;
+
+    &__image {
+      width: 53.12%;
+
+    }
+
+    &__body {
+      margin: auto;
+      padding-left: 2.5rem;
+      padding-right: 3.75rem;
+
+      &__title {
+        font-size: 3.438rem;
+        max-width: 100%;
+      }
+
+      &__btn {
+        padding: 1.25rem;
+      }
+    }
+  }
 }
