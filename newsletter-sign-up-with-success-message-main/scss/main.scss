@@ -146,5 +146,18 @@ body {
         padding: 1.25rem;
       }
     }
+
+    &--success {
+      max-width: 31.5rem;
+      max-height: 32.5rem;
+
+      .card__body {
+        padding: 2.5rem;
+      }
+
+      .card__body__text {
+        margin-bottom: 2.688rem;
+      }
+    }
   }
 }
