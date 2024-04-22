@@ -64,22 +64,49 @@ body {
     }
 
     &__email {
-      &__label {
-        @include t.font-email-label;
-        display: block;
+      &__header {
+        display: flex;
+        justify-content: space-between;
         margin-bottom: 0.75rem;
       }
 
+      &__label {
+        @include t.font-email-text;
+        display: block;
+      }
+
+      &__error {
+        @include t.font-email-text;
+        color: c.$tomato;
+        display: none;
+      }
+
       &__input {
+        @include t.font-text-regular;
+        color: c.$dark-slate-gray;
         width: 100%;
-        border: 1px solid c.$grey;
+        border: 1px solid c.$transparent-grey;
         border-radius: 0.5rem;
         padding: 1.25rem 1.5rem;
         margin-bottom: 1.5rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
 
         &::placeholder {
           @include t.font-text-regular;
         }
+
+        &:hover {
+          border-color: c.$grey;
+          transition: all 0.3s ease;
+        }
+
+        &:invalid {
+          border: 1px solid c.$tomato;
+          background-color: c.$tomato-invalid;
+          color: c.$tomato;
+        }
+
       }
     }
 
@@ -89,8 +116,15 @@ body {
       padding: 1.5rem;
       border: none;
       color: c.$white;
-      background-color: c.$dark-slate-gray;
+      background: c.$dark-slate-gray;
       border-radius: 0.5em;
+      cursor: pointer;
+      transition: all 0.4s;
+
+      &:hover {
+        background: linear-gradient(to right, c.$pink, c.$orange);
+        transition: all 0.4s;
+      }
     }
   }
 

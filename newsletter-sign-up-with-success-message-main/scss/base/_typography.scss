@@ -41,11 +41,12 @@ p {
 }
 
 //email-label
-@mixin font-email-label {
+@mixin font-email-text {
   font-family: $primary-font;
   font-weight: 700;
   font-size: 0.75rem;
 }
+
 
 @mixin font-button-bold {
   font-family: $primary-font;
