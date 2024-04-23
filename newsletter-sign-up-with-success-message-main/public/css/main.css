@@ -286,6 +286,9 @@ body {
     font-size: 3.438rem;
     max-width: 100%;
   }
+  .card__body__list__item {
+    align-items: center;
+  }
   .card__body__btn {
     padding: 1.25rem;
   }
