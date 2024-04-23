@@ -271,7 +271,7 @@ body {
     max-width: 58rem;
     max-height: 40.063rem;
     padding: 1.5rem;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
     background-color: hsl(0, 0%, 100%);
   }
   .card__image {
