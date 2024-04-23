@@ -18,7 +18,7 @@
 <body>
   <main> <!-- Sign-up form start -->
 
-    <section class="card">
+    <section class="card" id="card-signup">
       <div class="container">
         <picture class="card__image">
           <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 37.5rem)">
@@ -41,7 +41,7 @@
                 address</label><span class="card__body__email__error">Valid email required</span></div>
             <input type="email" name="email" placeholder="email@company.com" class="card__body__email__input">
           </form>
-          <button type="submit" class="card__body__btn">Subscribe to monthly newsletter</button>
+          <button type="submit" id="submitBtn" class="card__body__btn">Subscribe to monthly newsletter</button>
         </div>
       </div>
     </section>
@@ -49,7 +49,7 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <section class="card card--success hide">
+    <section class="card card--success hide" id="card-success">
       <div class="container">
         <div class="card__body">
           <img src="assets/images/icon-success.svg" alt="icon-success" class="card__icon">
@@ -58,7 +58,7 @@
               class="card__body__text--email">ash@loremcompany.com</a>.
             Please open it and click the button inside to confirm your subscription.
           </p>
-          <button class="card__body__btn" type="button">Dismiss message</button>
+          <button class="card__body__btn" type="button" id="dismissBtn">Dismiss message</button>
         </div>
       </div>
     </section>
