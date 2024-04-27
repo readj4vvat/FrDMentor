@@ -142,3 +142,28 @@ body {
   line-height: 1.2;
   text-wrap: wrap;
 }
+
+.rating-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.rating-group .rating {
+  text-align: center;
+  padding: 0.875rem;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 0.5rem;
+}
+.rating-group .rating__star-group {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.875rem;
+}
+.rating-group .rating__text {
+  font-family: "League Spartan", sans-serif;
+  font-size: 0.938rem;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  padding-bottom: 0.188rem;
+}
