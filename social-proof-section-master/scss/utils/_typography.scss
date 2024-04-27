@@ -1,0 +1,13 @@
+$primary-font: "League Spartan", sans-serif;
+
+@mixin title {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 0.75;
+}
+
+@mixin text {
+  font-family: $primary-font;
+  font-size: 0.938rem;
+}

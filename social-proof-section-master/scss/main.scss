@@ -1,2 +1,34 @@
 @use "base/reset";
-@use "utils/colors";
+@use "utils/colors" as c;
+@use "utils/typography" as f;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 4.75rem 1.5rem;
+}
+
+.header {
+  text-align: center;
+
+  &__title {
+    @include f.title;
+    color: c.$very-dark-magenta;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    margin: 0 0.625rem;
+    @include f.text;
+    font-weight: 500;
+    color: c.$dark-grayish-magenta;
+    line-height: 1.2;
+    text-wrap: wrap;
+  }
+
+  margin-bottom: 2.938rem;
+}
