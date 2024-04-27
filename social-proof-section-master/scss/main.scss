@@ -22,7 +22,7 @@ body {
   }
 
   &__text {
-    margin: 0 0.625rem;
+    margin: 0 calc(0.625rem + 3vw);
     @include f.text;
     font-weight: 500;
     color: c.$dark-grayish-magenta;

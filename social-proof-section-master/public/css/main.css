@@ -134,7 +134,7 @@ body {
   margin-bottom: 1.5rem;
 }
 .header__text {
-  margin: 0 0.625rem;
+  margin: 0 calc(0.625rem + 3vw);
   font-family: "League Spartan", sans-serif;
   font-size: 0.938rem;
   font-weight: 500;
