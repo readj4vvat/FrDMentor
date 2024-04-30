@@ -115,6 +115,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: unset, contain;
+  background-position: top left, bottom right;
 }
 
 .container {
@@ -129,8 +133,9 @@ body {
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
-  line-height: 0.75;
+  line-height: 0.85;
   color: hsl(300, 43%, 22%);
+  letter-spacing: -1px;
   margin-bottom: 1.5rem;
 }
 .header__text {
@@ -198,12 +203,13 @@ body {
 .card-group .card__profile__info__name {
   font-family: "League Spartan", sans-serif;
   font-size: 0.938rem;
-  font-weight: 500;
+  font-weight: 700;
   color: hsl(0, 0%, 100%);
 }
 .card-group .card__profile__info__job-title {
   font-family: "League Spartan", sans-serif;
   font-size: 0.938rem;
+  font-weight: 500;
   color: hsl(333, 80%, 67%);
 }
 .card-group .card__text {
@@ -213,4 +219,92 @@ body {
   color: hsl(0, 0%, 100%);
   font-weight: 500;
   margin: 0 0.625rem;
+}
+
+@media only screen and (min-width: 48em) {
+  body {
+    background: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+    height: 100vh;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+  }
+  .container {
+    max-width: 69.438rem;
+    max-height: 36.688rem;
+    margin: 0;
+    display: grid;
+    row-gap: 4.5rem;
+    grid-template-columns: 569px auto;
+    grid-template-areas: "header rating rating rating" "card card card card";
+  }
+  .header {
+    grid-area: header;
+    text-align: unset;
+    margin-bottom: 0;
+  }
+  .header__title {
+    max-width: 20.75rem;
+    font-size: 3rem;
+  }
+  .header__text {
+    max-width: 25.688rem;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .rating-group {
+    grid-area: rating;
+    margin-bottom: 0;
+  }
+  .rating-group .rating {
+    max-width: 445px;
+    max-height: 56px;
+    padding: 1.25rem 2.125rem;
+    display: flex;
+    text-align: unset;
+    align-items: center;
+    gap: 2rem;
+  }
+  .rating-group .rating--second {
+    margin-left: 51px;
+  }
+  .rating-group .rating--third {
+    margin-left: 91px;
+  }
+  .rating-group .rating__star-group {
+    margin-bottom: 0;
+  }
+  .rating-group .rating__text {
+    padding-bottom: 0;
+  }
+  .card-group {
+    grid-area: card;
+    flex-direction: row;
+    gap: 1.75rem;
+    height: 268px;
+  }
+  .card-group .card {
+    max-width: 21.875rem;
+    max-height: 14.688rem;
+    padding-bottom: 2.625rem;
+  }
+  .card-group .card__profile__info__name {
+    font-size: 1rem;
+  }
+  .card-group .card__profile__info__job-title {
+    font-size: 1rem;
+  }
+  .card-group .card__text {
+    line-height: 1.5;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .card-group .card--first {
+    align-self: flex-start;
+  }
+  .card-group .card--second {
+    align-self: center;
+  }
+  .card-group .card--third {
+    align-self: end;
+  }
 }
