@@ -110,3 +110,105 @@ input {
   -webkit-appearance: none;
   border-radius: 0;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.article {
+  margin: 0 1.5rem;
+  max-width: 20.438rem;
+  max-height: 32.063rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+}
+.article .container {
+  padding: 0 2rem;
+}
+.article__header {
+  display: block;
+  width: 100%;
+  height: 200px;
+  background: url("../images/drawers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -1rem;
+}
+.article__body {
+  background-color: white;
+}
+.article__title {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.04em;
+  font-weight: 700;
+  line-height: 1.4;
+  color: hsl(217, 19%, 35%);
+  padding-top: 40px;
+  padding-bottom: 1rem;
+}
+.article__text {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.813rem;
+  font-weight: 500;
+  line-height: 1.65;
+  color: hsl(214, 17%, 51%);
+  padding-bottom: 1rem;
+}
+.article__footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+.article__footer__author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.article__footer__author__name {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.813rem;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+  line-height: 1.5;
+}
+.article__footer__author__date {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: hsl(212, 23%, 69%);
+}
+.article__footer__author__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.article__footer__share {
+  display: flex;
+}
+.article__footer__social {
+  display: flex;
+}
+.article__footer__social__icon img {
+  color: red;
+  background-color: blue;
+}
+.article__footer__btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.hide {
+  display: none;
+}

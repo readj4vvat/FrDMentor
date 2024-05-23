@@ -1,2 +1,112 @@
 @use "base/reset";
-@use "utils/colors.scss";
+@use "base/typography" as f;
+@use "utils/colors.scss" as c;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  background-color: c.$light-grayish-blue;
+}
+
+.article {
+  margin: 0 1.5rem;
+  max-width: 20.438rem;
+  max-height: 32.063rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  &__header {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: url("../images/drawers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -1rem;
+  }
+
+  &__body {
+    background-color: white;
+  }
+
+  &__title {
+    @include f.title;
+    color: c.$very-dark-grayish-blue;
+    padding-top: 40px;
+    padding-bottom: 1rem;
+  }
+
+  &__text {
+    @include f.text;
+    color: c.$desaturated-dark-blue;
+    padding-bottom: 1rem;
+
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+
+    &__author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      &__name {
+        @include f.name;
+        color: c.$very-dark-grayish-blue;
+        line-height: 1.5;
+      }
+
+      &__date {
+        @include f.date;
+        color: c.$grayish-blue;
+      }
+
+      &__avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+    }
+
+    &__share {
+      display: flex;
+    }
+
+    &__social {
+      display: flex;
+
+      &__icon {
+        img {
+          color: red;
+          background-color: blue;
+        }
+      }
+    }
+
+    &__btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: c.$light-grayish-blue;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,27 @@
+$primary-font: "Manrope", sans-serif;
+
+@mixin title {
+  font-family: $primary-font;
+  font-size: 1.04em;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@mixin text {
+  font-family: $primary-font;
+  font-size: 0.813rem;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+@mixin name {
+  font-family: $primary-font;
+  font-size: 0.813rem;
+  font-weight: 700;
+}
+
+@mixin date {
+  font-family: $primary-font;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
