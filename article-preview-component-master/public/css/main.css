@@ -132,7 +132,7 @@ body {
 .article__header {
   display: block;
   width: 100%;
-  height: 200px;
+  height: 12.5rem;
   background: url("../images/drawers.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -147,7 +147,7 @@ body {
   font-weight: 700;
   line-height: 1.4;
   color: hsl(217, 19%, 35%);
-  padding-top: 40px;
+  padding-top: 2.5rem;
   padding-bottom: 1rem;
 }
 .article__text {
@@ -163,15 +163,18 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 1rem 0;
+  transition: all 0.3s ease-in-out;
 }
 .article__footer--active {
   background-color: hsl(217, 19%, 35%);
+  transition: all 0.3s ease-in-out;
 }
 .article__footer--active .article__footer__author {
   display: none;
 }
 .article__footer--active .article__footer__share {
   display: flex;
+  height: 2.5rem;
 }
 .article__footer__author {
   display: flex;
@@ -192,8 +195,8 @@ body {
   color: hsl(212, 23%, 69%);
 }
 .article__footer__author__avatar {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
 }
 .article__footer__share {
@@ -215,8 +218,8 @@ body {
   gap: 1rem;
 }
 .article__footer__btn {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   border-radius: 50%;
   border: none;
   cursor: pointer;
