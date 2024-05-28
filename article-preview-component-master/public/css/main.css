@@ -127,7 +127,8 @@ body {
   border-radius: 0.625rem;
 }
 .article .container {
-  padding: 0 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .article__header {
   display: block;
@@ -160,7 +161,7 @@ body {
 }
 .article__footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
   transition: all 0.3s ease-in-out;
@@ -175,6 +176,12 @@ body {
 .article__footer--active .article__footer__share {
   display: flex;
   height: 2.5rem;
+}
+.article__footer--active .article__footer__btn {
+  background-color: hsl(212, 23%, 69%);
+}
+.article__footer--active .article__footer__btn img {
+  filter: brightness(0) invert(1);
 }
 .article__footer__author {
   display: flex;
@@ -227,6 +234,9 @@ body {
   justify-content: center;
   align-items: center;
   background-color: hsl(210, 46%, 95%);
+}
+.article__footer__btn:focus-visible {
+  outline: none;
 }
 
 .hide {
